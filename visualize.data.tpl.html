@@ -1,6 +1,6 @@
 <div class='container extender'>
   <div class='row'>
-    <div class='center'>netTotal: {{SalesTransactionData.netTotal}}</div>
+    <div class='center'>Net Total Sales: {{SalesTransactionData.netTotal/100}}</div>
     <div ng-repeat='employee in SalesTransactionData.employeeData'
          ng-style='{"background-color": employee.color, "width": employee.width }'>
       <div class='center'>
