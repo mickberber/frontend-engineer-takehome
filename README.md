@@ -43,9 +43,9 @@ First you should pass this raw data into your directive, then inside the directi
 
 #Quick Start Server
 The easiest way to test the app is to install the http-server package:
- `npm install -g http-server`
+- `npm install -g http-server`
  and then run:
- `http-server`
+- `http-server`
 inside of the project directory.
 
 #Contact Us
