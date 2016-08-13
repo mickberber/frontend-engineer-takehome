@@ -2,32 +2,31 @@
 <html>
 <head>
     <title>front end take home</title>
-        <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel='stylesheet' type='text/css' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
+    <link rel='stylesheet' type='text/css' href='main.css'>
 </head>
 <body ng-app='takeHomeApp'>
     <div ng-controller='TakeHomeController'>
-        <visualize-data></visualize-data>
-        <p> Below is the raw sales transaction data </p> 
-        <pre>{{SalesTransactionData | json}}</pre>
+          <visualize-data ng-if='renderdirective' data='SalesTransactionData'></visualize-data>
     </div>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.0/angular.min.js'></script>
     <script>
+
         (function(){
             angular.module('takeHomeApp', []);
         })();
 
        (function(){
            function controller($scope, $http) {
-               console.log('TakeHome Started') 
                $http.get('SalesTransactions.json')
                .then(function(response) {
-                   console.log('response', response)
-                   $scope.SalesTransactionData = response.data; 
+                   $scope.SalesTransactionData = response.data;
+                   $scope.renderdirective = true;
                })
            };
            angular.module('takeHomeApp').controller('TakeHomeController', controller);
-       })()
-       
+       })();
+
     </script>
     <script src='transform.factory.js'></script>
     <script src='visualize.directive.js'></script>

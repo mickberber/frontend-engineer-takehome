@@ -1,10 +1,12 @@
 ## Hot Schedules Front End Software Engineer Takehome project
+![Alt text](./hotschedules.png 'Hot Schedules logo')
 
-This take home project is designed to give us an idea of how you code. It is designed to be a more representative example of the work you would be doing than a traditional, whiteboarding technical interview. It is therefore designed to be a lower stress alternative to other interviewing techniques. If you have any concerns or feedback about the requirements, please don't hesitate to reach out to your interviewer.
+This take home project is designed to give us an idea of how you code. It is designed to be a more representative example of the work you would be doing than a traditional, white boarding technical interview. It is therefore designed to be a lower stress alternative to other interviewing techniques.
 
 There are three parts to the exercise, however all three parts build on each other. It should not take more than 2-3 hours to complete. If you think that the requirements will take significantly longer than that, please give that feedback.
 
-Clone the repo. There should be four files
+#To Start
+Clone the repo.
 
 - index.html
 - SalesTransactions.json
@@ -19,4 +21,5 @@ Then in `visualize.directive.js`, create an angular directive that uses your tra
 
 The easiest way to test the app is to install the http-server package `npm install -g http-server` and then run `http-server` inside the project directory.
 
-
+#Contact Us
+If you have any concerns or feedback about the requirements, please don't hesitate to reach out to your interviewer.
