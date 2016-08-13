@@ -3,11 +3,12 @@
         return {
             templateUrl: 'visualize.data.tpl.html',
             scope: {
-                //edit this
+                //give directive access to SalesTransactionData from controller scope
                 SalesTransactionData: '=data'
             },
             restrict: 'E',
             controller: ['$scope', 'transformFactory', function($scope, transformFactory) {
+                //Transform data, using factory
                 $scope.SalesTransactionData = transformFactory.transformData($scope.SalesTransactionData);
             }]
         }

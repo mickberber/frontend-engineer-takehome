@@ -1,5 +1,6 @@
 (function() {
     function factory() {
+        //genrate color id's using employee id's for unigue color codes
         function generateColor(id) {
           var color = '#' + id.toString();
           while(color.length <= 6) {
